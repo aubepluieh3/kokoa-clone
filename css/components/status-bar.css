@@ -5,7 +5,8 @@
 }
 
 .status-bar__column{
-    width: 33%;
+    position: fixed;
+    width: 100%;
 }
 
 .status-bar__column:first-child span{
