@@ -1,123 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Friends - Kokoa Clone</title>
-    </head>
-    <body>
-        <div class="status-bar">
-            <div class="status-bar__column">
-                <span>No Service</span>
-                <!--To Do: WiFi Icon-->
-                <i class="fas fa-wifi"></i>
-            </div>    
-            <div class="status-bar__column">
-                <span>18:43</span>
-            </div>    
-            <div class="status-bar__column">
-                <span>110%</span>
-                <!--To Do: Battery Icon-->
-                <!--To Do: Lightning Icon-->
-                <i class="fas fa-battery-full fa-lg"></i>
-                <i class="fas fa-bolt"></i>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+  </head>
+  <body id="friends-scr">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!--To Do: WiFi Icon-->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!--To Do: Battery Icon-->
+        <!--To Do: Lightning Icon-->
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i> Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="soo.jpg"
+            class="user-component__avatar"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">SOO</h4>
+            <h6 class="user-component__subtitle">:)</h6>
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://w.namu.la/s/0029b80648f82ded49b648ce4a03e70ebb07cb28a13855b49f9f58f7e3cd5ec58ac211b401075c68ddc90609d307a8075c474d49cca4c1bd427835d61b9a64bb032503ac6ae376f3e1370bf82e69f47e5d69d37cde0d9be1167d88086cbe0221"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
             </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>2</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="frineds-screen__friends">
+        <div class="friends-screen__friends-header">
+          <span>Friends</span>
+          <div>
+            <span>3</span>
+          </div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/20151026_143/ddazero_1445796476304xg8jq_JPEG/bob-minions.jpg?type=w2"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Bob
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__stateMessage__box">
+              <h6 class="user-component__stateMessage">Wth My Bear</h6>
+            </div>
+          </div>
         </div>
 
-        <header class="screen-header">
-            <h1 class="screen-header__title">Friends</h1>
-            <div class="screen-header__icons">
-                <span><i class="fas fa-search fa-lg"></i></span>
-                <span><i class="fas fa-music fa-lg"></i></span>
-                <span><i class="fas fa-cog fa-lg"></i></span>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://w.namu.la/s/4119502989a9188c58e7cccc39483d9cfec828571e92680a7984a400df32e65410d8db22e8b8419ae8ac70339865487e360c39dfe5f8a046806fe563fc536609adb7b9f9d3c52a210a6e7f40b234d50bd8608da53c3b4e7052bdc7bc10f71d0b"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Kevin
+              </h4>
             </div>
-        </header>
-        
-        <a id="friends-display-link">
-            <i class="fas fa-info-circle"></i> Friends' Names Display
-            <i class="fas fa-chevron-right fa-xs"></i>
-        </a>
-
-        <main class="friends-screen">
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="soo.jpg" class="user-component__avatar"
-                     class="user-component__avatar user-component__avatar--xl"   
-                    />
-                    <div class="user-component__text">
-                        <h4 class="user-component__title">SOO</h4>   
-                        <h6 class="user-component__subtitle">:)</h6>
-                    </div>
-    
-    
-                </div>
-                <div class="user-component__column"></div>
-    
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__stateMessage__box">
+              <h6 class="user-component__stateMessage">Leader</h6>
             </div>
-            <div class="friends-screen__channel">
-                <div class="friends-screen__channel-header">
-                    <span>Channel</span>
-                    <i class="fas fa-chevron-up fa-xs"></i>
-                </div>
-                <div class="user-component">
-                    <div class="user-component__column">
-                        <img src="https://blog.kakaocdn.net/dn/cSp0YC/btrm55LJ92B/3FmreIDnFqxSkYZNIOrKIk/img.jpg"
-                         class="user-component__avatar user-component__avatar--sm"   
-                        />
-                        <div class="user-component__text">
-                            <h4 class="user-component__title user-component__title--not-bold">Channel</h4>       
-                        </div>
-                    </div>
-                    <div class="user-component__column">
-                        <div>
-                            <span>2</span>
-                            <i class="fas fa-chevron-right fa-xs"></i>
-                        </div>
-                    </div>
-        
-                </div>
-            </div>
-        </main>
-
-        
-
-        <nav class="nav">
-            <ul class="nav__list">    
-                <li class="nav__btn">
-                    <a class="nav__link" href="friends.html">
-                        <i class="fas fa-user fa-2x"></i>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="chats.html">
-                        <span class="nav__notification badge">1</span>
-                        <i class="far fa-comment fa-2x"></i>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="find.html">
-                        <i class="fas fa-search fa-2x"></i>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="more.html">
-                        <span class="nav__dot"></span>
-                        <i class="fas fa-ellipsis-h fa-2x"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div id="splash-screen">
-            <i class="fas fa-comment"></i>
-        </div>
-        
-        <div id="no-mobile">
-            <span>Your screen is too big ㅠㅠ</span>
+          </div>
         </div>
 
-        <script src="https://kit.fontawesome.com/7617e049df.js" crossorigin="anonymous">
-        </script>    
-    </body>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://w.namu.la/s/7f8b6145fbf078947485c5d04fabe72ce4075057a66dc9cc25088e79c2f454bec9c4e05c537e8514c37f5c76c648503a6a55c8623c9e21d3112ba155152d3c75ee195ec9280c7916ed17ae103578476595bd91806349f33c7a7f43701bf19c2941aa6782a7d126ca29714a7675d976c2"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Stuart
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div class="user-component__stateMessage__box">
+              <h6 class="user-component__stateMessage">🎸</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fas fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__dot"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="splash-screen">
+      <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/7617e049df.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
