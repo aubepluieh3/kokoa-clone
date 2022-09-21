@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
+  background-color: #fff16e;
   height: 500vh;
 }
 
@@ -8,7 +8,7 @@
   top: 0;
   position: fixed;
   width: 100%;
-  background-color: #abc1d1;
+  background-color: #fff16e;
   box-sizing: border-box;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: white;
   border-top-right-radius: 0px;
   border-top-left-radius: 15px;
   margin-right: 0px;

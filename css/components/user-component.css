@@ -20,11 +20,24 @@
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 .user-component__subtitles {
   margin-top: 8px;
   display: flex;
+}
+.user-component__Me {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  margin-right: 5px;
+}
+.user-component__Me span {
+  color: white;
+  font-size: 13px;
+  text-align: center;
 }
 
 .user-component__subtitles i {
@@ -45,6 +58,9 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.user-fix__text {
+  display: flex;
+}
 .user-component__stateMessage__box {
   display: flex;
   width: 100px;
